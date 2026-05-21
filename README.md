@@ -151,7 +151,7 @@ Even as a static marketing page, security best practices are enforced:
 
 ## 🔗 Relationship to BunkCalc App
 
-This landing page is the **public-facing website** for the [BunkCalc mobile app](../BunkCalc1/).
+This landing page is the **public-facing website** for the [BunkCalc mobile app].
 
 | Concern | Landing Page | Mobile App |
 |---|---|---|
