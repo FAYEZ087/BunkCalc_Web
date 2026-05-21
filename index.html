@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Content Security Policy for BunkCalc Landing Page.
+      - script-src 'self': Only scripts bundled with the page are allowed.
+      - style-src 'self' 'unsafe-inline': Inline styles allowed for styling.
+      - img-src 'self' data: blob:: data URIs and assets allowed.
+      - media-src 'self': Local media assets.
+      - connect-src 'self': Offline-first/no external tracking APIs.
+      - object-src 'none': Prevents plugin injection attacks.
+      - base-uri 'self': Prevents base hijacking.
+    -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self';
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data: blob:;
+               media-src 'self';
+               connect-src 'self';
+               object-src 'none';
+               base-uri 'self';" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#020617" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BunkCalc - Attendance Tracker</title>
+    <meta name="description" content="The ultimate proactive attendance tracker for students. Calculate safe bunks, get class reminders, and track your history." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
