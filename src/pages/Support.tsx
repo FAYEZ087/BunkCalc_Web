@@ -48,9 +48,10 @@ export default function Support() {
               {[
                 { q: "Is BunkCalc free to use?", a: "Absolutely. BunkCalc is a community project for students. There are no ads, no subscriptions, and no hidden costs." },
                 { q: "Is my data private?", a: "100%. BunkCalc doesn't have a backend. All your data stays on your phone. If you delete the app, your data is gone unless you've exported a backup." },
-                { q: "How accurate is the 'Safe to Bunk' logic?", a: "The logic is based on standard 75% requirements and your specific subject credits. It's a mathematically precise projection based on the records you enter." },
+                { q: "How accurate is the 'Safe to Bunk' logic?", a: "The logic is based on semester-forward calculations and your institution's target attendance threshold (default 75%). It gives a mathematically precise bunk budget." },
                 { q: "What happens if I change my phone?", a: "You can use the 'Export Data' feature in settings to save a .json file. Simply 'Import' that file on your new device to restore everything." },
-                { q: "Does it support Lab classes?", a: "Yes! When adding a subject, you can set the 'Lab Multiplier' which will count one attendance as two classes, matching university standards." },
+                { q: "Does it support Lab classes?", a: "Yes! You can mark a subject as a Lab to display it as a 2-hour block on your timetable with a 'Lab' label. In attendance calculations, each lab session counts as 1 session." },
+                { q: "Why can't I connect BunkCalc to my college SAP or ERP portal?", a: "BunkCalc is a privacy-first offline tool that does not store or request your college credentials. Direct portal integration would require storing sensitive passwords. Manual tracking ensures 100% credential security." },
                 { q: "Why am I not getting notifications?", a: "Ensure you've granted 'Exact Alarm' and 'Notification' permissions. Some Android skins (like MIUI) might require you to allow 'Autostart' for the app." }
               ].map((item, idx) => (
                 <div key={idx} className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm">

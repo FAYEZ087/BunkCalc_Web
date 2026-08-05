@@ -4,7 +4,7 @@
 
 ### _The official product website for BunkCalc._
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue?style=for-the-badge)](https://github.com/bunkcalc)
+[![Version](https://img.shields.io/badge/version-1.1.2-blue?style=for-the-badge)](https://github.com/bunkcalc)
 [![React](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-8-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
@@ -158,7 +158,7 @@ This landing page is the **public-facing website** for the [BunkCalc mobile app]
 | **Purpose** | Marketing + APK download | The actual attendance tracker |
 | **Platform** | Web (any browser) | Android (Capacitor) |
 | **Data** | None — fully static | Local-only (Preferences API) |
-| **Version** | `1.1.0` | `1.1.0` |
+| **Version** | `1.1.2` | `1.1.2` |
 
 ---
 
@@ -172,6 +172,6 @@ This project is **private** and not open-source. All rights reserved.
 
 **The front door to BunkCalc — designed to impress, built to convert.**
 
-`v1.1.0`
+`v1.1.2`
 
 </div>

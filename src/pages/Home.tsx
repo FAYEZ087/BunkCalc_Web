@@ -41,7 +41,7 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 md:border border-blue-100 dark:border-blue-800">
               <ShieldCheck size={14} />
-              <span>Version 1.1.0 Official Edition</span>
+              <span>Version 1.1.2 Official Edition</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 md:mb-8 leading-tight tracking-tight text-slate-900 dark:text-white">
               Take Control of Your <span className="text-blue-600">College Life.</span>
@@ -163,7 +163,7 @@ export default function Home() {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Designed for Excellence.</h2>
             <p className="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
-              BunkCalc (v1.1.0) is the result of months of student feedback. 
+              BunkCalc (v1.1.2) is the result of months of student feedback. 
               We've refined the algorithms and polished the interface to give you the best experience possible.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">

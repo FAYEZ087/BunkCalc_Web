@@ -3,7 +3,7 @@ export default function Terms() {
     <div className="pt-32 pb-24 px-6 min-h-screen">
       <div className="max-w-4xl mx-auto prose dark:prose-invert">
         <h1 className="text-5xl font-black mb-8 dark:text-white uppercase italic">Terms of Service</h1>
-        <p className="text-slate-500 font-bold mb-12">Effective Date: May 1, 2026 &bull; Version 1.1</p>
+        <p className="text-slate-500 font-bold mb-12">Effective Date: August 5, 2026 &bull; Version 1.1.2</p>
 
         <section className="mb-12">
           <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">1. Acceptance of Terms</h2>
@@ -15,7 +15,7 @@ export default function Terms() {
         <section className="mb-12">
           <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">2. Description of Service</h2>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-            BunkCalc is a personal attendance management tool designed for university students. The App operates entirely offline with local-only data storage. No account creation or internet connection is required for core functionality.
+            BunkCalc is a personal attendance management tool designed for university students. The App allows tracking daily class attendance, calculating semester-forward bunk budgets, displaying lab sessions as 2-hour timetable blocks, managing cancelled class pool adjustments, and receiving local notifications. The App operates entirely offline with local-only data storage. No account creation, credentials, or internet connection is required for core functionality.
           </p>
         </section>
 
