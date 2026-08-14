@@ -3,7 +3,7 @@ export default function Terms() {
     <div className="pt-32 pb-24 px-6 min-h-screen">
       <div className="max-w-4xl mx-auto prose dark:prose-invert">
         <h1 className="text-5xl font-black mb-8 dark:text-white uppercase italic">Terms of Service</h1>
-        <p className="text-slate-500 font-bold mb-12">Effective Date: August 5, 2026 &bull; Version 1.1.2</p>
+        <p className="text-slate-500 font-bold mb-12">Effective Date: August 15, 2026 &bull; Version 2.0.0</p>
 
         <section className="mb-12">
           <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">1. Acceptance of Terms</h2>
