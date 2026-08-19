@@ -45,18 +45,18 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 md:border border-blue-100 dark:border-blue-800">
               <Sparkle size={14} />
-              <span>Version 2.0.0 Major Release</span>
+              <span>Version 2.1.0 Major Release</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 md:mb-8 leading-tight tracking-tight text-slate-900 dark:text-white">
               Take Control of Your <span className="text-blue-600">College Life.</span>
             </h1>
             <p className="text-base md:text-xl text-slate-600 dark:text-slate-400 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              The ultimate attendance tracker built for students. Smart math, bunk simulator, weekly trend charts, CSV/PDF reports, and a modern UI that respects your time.
+              The ultimate attendance tracker built for students. Class timetable QR sharing, mid-semester past attendance sync, weekly bunk strategy, and a modern UI that respects your time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="/bunkcalc.apk" className="bg-blue-600 hover:bg-blue-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl flex items-center justify-center gap-3 font-bold text-base md:text-lg transition-all shadow-xl shadow-blue-500/25 active:scale-95 group">
                 <Download size={24} />
-                <span>Download APK v2.0.0</span>
+                <span>Download APK v2.1.0</span>
                 <ChevronRight className="hidden sm:block group-hover:translate-x-1 transition-transform" />
               </a>
               <div className="flex items-center justify-center gap-3 px-2 text-xs md:text-sm font-semibold text-slate-500 dark:text-slate-400">
@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="p-6 md:p-8 pt-10 md:pt-12">
                   <div className="flex justify-between items-center mb-6 md:mb-8">
                     <span className="text-lg md:text-xl font-black italic text-blue-600 uppercase">BunkCalc</span>
-                    <span className="text-[10px] font-black bg-blue-500/20 text-blue-500 px-2 py-0.5 rounded-full">v2.0.0</span>
+                    <span className="text-[10px] font-black bg-blue-500/20 text-blue-500 px-2 py-0.5 rounded-full">v2.1.0</span>
                   </div>
                   
                   <div className="bg-blue-600 rounded-2xl md:rounded-3xl p-4 md:p-6 mb-6 md:mb-8 text-white">
@@ -113,65 +113,65 @@ export default function Home() {
       <section id="features" className="py-16 md:py-24 px-4 md:px-6 bg-slate-50 dark:bg-slate-900/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-20">
-            <h2 className="text-3xl md:text-4xl font-black mb-4 dark:text-white">What's New in Version 2.0.0</h2>
+            <h2 className="text-3xl md:text-4xl font-black mb-4 dark:text-white">What's New in Version 2.1.0</h2>
             <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              BunkCalc is packed with intelligent tools, interactive simulations, and report exports to make balancing college life effortless.
+              BunkCalc v2.1.0 introduces Class Timetable Cloud & QR Sharing, Mid-Semester Past Attendance Sync, Interactive Holiday Manager, and 7-Day Strategy Engine.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <FeatureCard 
-              icon={BarChart3}
-              title="Weekly Attendance Trends"
-              description="8-week visual bar chart tracking your weekly attendance percentage against your threshold."
+              icon={Sparkles}
+              title="Timetable Cloud & QR Sharing"
+              description="Share complete section schedules in 1 second with 6-letter short codes or camera-scannable QR codes."
               delay={0.1}
             />
             <FeatureCard 
-              icon={Sparkles}
-              title="'What-If' Bunk Simulator"
-              description="Predict your exact percentage before skipping upcoming classes with instant recovery estimates."
+              icon={Clock}
+              title="Mid-Semester Past Attendance"
+              description="Joined mid-semester? Enter attended and missed classes on import or edit anytime in Subject Details."
               delay={0.2}
             />
             <FeatureCard 
-              icon={Clock}
-              title="Semester Progress Bar"
-              description="Real-time timeline tracking weeks remaining in the semester and elapsed class days."
+              icon={RotateCcw}
+              title="Interactive Holiday Manager"
+              description="Create and manage semester breaks directly with automated reminder rescheduling and timetable sync."
               delay={0.3}
             />
             <FeatureCard 
-              icon={RotateCcw}
-              title="Swipe-to-Undo & Re-mark"
-              description="Swipe marked cards anytime to re-mark attendance or toggle between Present, Absent, and Cancelled."
+              icon={BarChart3}
+              title="Weekly Bunk Strategy"
+              description="Smart 7-day tactical roadmap showing safe skips and exact consecutive classes needed for recovery."
               delay={0.4}
+            />
+            <FeatureCard 
+              icon={BellRing}
+              title="Smart Class Reminders"
+              description="Post-class notifications sent 10 minutes after lecture end with duplicate suppression."
+              delay={0.5}
             />
             <FeatureCard 
               icon={FileSpreadsheet}
               title="CSV & PDF Exports"
-              description="Download your complete attendance records as CSV spreadsheets or export formatted PDF reports."
-              delay={0.5}
+              description="Download complete attendance logs as spreadsheets or export printable PDF reports."
+              delay={0.6}
             />
             <FeatureCard 
               icon={Search}
               title="History Search & Filters"
-              description="Filter logs by subject, status (Present/Absent/Cancelled), or custom date range."
-              delay={0.6}
-            />
-            <FeatureCard 
-              icon={ShieldCheck}
-              title="Delete Safety Confirmations"
-              description="Built-in confirmation dialogs prevent accidental deletion of attendance records or subject profiles."
+              description="Filter logs by subject, status (Present/Absent/Cancelled), or custom date ranges."
               delay={0.7}
             />
             <FeatureCard 
-              icon={BellRing}
-              title="Smart Local Notifications"
-              description="Pre-class reminders and post-class prompts ensure your attendance records are always up to date."
+              icon={ShieldCheck}
+              title="Safety Confirmations"
+              description="Built-in safeguards prevent accidental deletion of attendance records or subject profiles."
               delay={0.8}
             />
             <FeatureCard 
               icon={CloudLightning}
               title="Fast, Offline & Zero Data"
-              description="Your data is stored 100% locally on your device. No servers, no account required, no tracking."
+              description="Your data is stored 100% locally on your device. No servers, no accounts, zero tracking."
               delay={0.9}
             />
           </div>
@@ -185,7 +185,7 @@ export default function Home() {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Designed for Excellence.</h2>
             <p className="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
-              BunkCalc (v2.0.0) is the major release packed with weekly trends, what-if bunk simulator, semester timeline, CSV/PDF reports, and advanced filtering.
+              BunkCalc (v2.1.0) is the latest release packed with timetable QR sharing, mid-semester past attendance, weekly strategy, and holiday management.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
               <div className="flex items-center gap-2">
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
             <a href="/bunkcalc.apk" className="inline-flex items-center gap-3 bg-white text-blue-600 px-8 md:px-10 py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl hover:bg-slate-50 transition-all active:scale-95 shadow-xl w-full sm:w-auto justify-center">
               <Download size={24} />
-              <span>Get the APK v2.0.0</span>
+              <span>Get the APK v2.1.0</span>
             </a>
           </div>
         </div>

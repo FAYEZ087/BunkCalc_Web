@@ -23,13 +23,13 @@ export default function Navbar() {
           <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
           <Link to="/support" className="hover:text-blue-600 transition-colors">Support</Link>
           <a 
-            href="https://github.com/FAYEZ087" 
+            href="https://github.com/PinecoXZ" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition-colors flex items-center gap-1.5 font-bold"
           >
             <GithubIcon size={16} />
-            <span>FAYEZ087</span>
+            <span>PinecoXZ</span>
           </a>
           <a href="/bunkcalc.apk" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full flex items-center gap-2 transition-all shadow-lg shadow-blue-500/20 active:scale-95">
             <Download size={18} />
@@ -51,14 +51,14 @@ export default function Navbar() {
           <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/support" onClick={() => setIsMenuOpen(false)}>Support</Link>
           <a 
-            href="https://github.com/FAYEZ087" 
+            href="https://github.com/PinecoXZ" 
             target="_blank" 
             rel="noopener noreferrer" 
             onClick={() => setIsMenuOpen(false)}
             className="flex items-center gap-2 font-bold text-blue-600 dark:text-blue-400"
           >
             <GithubIcon size={18} />
-            <span>GitHub (@FAYEZ087)</span>
+            <span>GitHub (@PinecoXZ)</span>
           </a>
           <a href="/bunkcalc.apk" className="bg-blue-600 text-white px-6 py-3 rounded-xl flex items-center justify-center gap-2">
             <Download size={18} />

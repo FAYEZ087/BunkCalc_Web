@@ -4,13 +4,13 @@
 
 ### _The official product website for BunkCalc._
 
-[![Version](https://img.shields.io/badge/version-2.0.0-blue?style=for-the-badge)](https://github.com/bunkcalc)
+[![Version](https://img.shields.io/badge/version-2.1.0-blue?style=for-the-badge)](https://github.com/PinecoXZ/BunkCalc_Web)
 [![React](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-8-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
-A **modern, responsive, and secure** marketing website that lets students learn about BunkCalc v2.0.0 and download the Android APK directly.
+A **modern, responsive, and secure** marketing website that lets students learn about BunkCalc v2.1.0 and download the Android APK directly.
 
 ---
 
@@ -20,7 +20,7 @@ A **modern, responsive, and secure** marketing website that lets students learn 
 
 | Page | Route | Description |
 |---|---|---|
-| 🏠 **Home** | `/` | Hero section, v2.0.0 feature showcase, phone mockup, and download CTA |
+| 🏠 **Home** | `/` | Hero section, v2.1.0 feature showcase, phone mockup, and download CTA |
 | 🛟 **Support** | `/support` | Setup guide and frequently asked questions |
 | 🔏 **Privacy** | `/privacy` | Full privacy policy detailing the zero-collection architecture |
 | 📜 **Terms** | `/terms` | Terms of service |
@@ -158,7 +158,7 @@ This landing page is the **public-facing website** for the [BunkCalc mobile app]
 | **Purpose** | Marketing + APK download | The actual attendance tracker |
 | **Platform** | Web (any browser) | Android (Capacitor) |
 | **Data** | None — fully static | Local-only (Preferences API) |
-| **Version** | `2.0.0` | `2.0.0` |
+| **Version** | `2.1.0` | `2.1.0` |
 
 ---
 
@@ -172,6 +172,6 @@ This project is **private** and not open-source. All rights reserved.
 
 **The front door to BunkCalc — designed to impress, built to convert.**
 
-`v2.0.0`
+`v2.1.0` · Developed by [PinecoXZ](https://github.com/PinecoXZ)
 
 </div>

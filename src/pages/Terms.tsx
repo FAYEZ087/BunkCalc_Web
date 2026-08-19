@@ -3,12 +3,12 @@ export default function Terms() {
     <div className="pt-32 pb-24 px-6 min-h-screen">
       <div className="max-w-4xl mx-auto prose dark:prose-invert">
         <h1 className="text-5xl font-black mb-8 dark:text-white uppercase italic">Terms of Service</h1>
-        <p className="text-slate-500 font-bold mb-12">Effective Date: August 15, 2026 &bull; Version 2.0.0</p>
+        <p className="text-slate-500 font-bold mb-12">Effective Date: August 19, 2026 &bull; Version 2.1.0</p>
 
         <section className="mb-12">
           <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">1. Acceptance of Terms</h2>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-            By downloading, installing, or using BunkCalc ("the App"), you ("the User") agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not use the App.
+            By downloading, installing, or using BunkCalc ("the App") developed by <a href="https://github.com/PinecoXZ" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold underline">PinecoXZ</a>, you ("the User") agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not use the App.
           </p>
         </section>
 

@@ -1,6 +1,6 @@
 {
-  "versionCode": 5,
-  "versionName": "2.0.0",
+  "versionCode": 6,
+  "versionName": "2.1.0",
   "apkUrl": "https://bunk-calc-web.vercel.app/bunkcalc.apk",
-  "changelog": "v2.0.0 Major Release: Added Weekly Attendance Trends chart, What-If Bunk Simulator, Semester Progress Timeline, Swipe-to-Undo, CSV/PDF Export, History Search & Filters, and safety/delete confirmations."
+  "changelog": "v2.1.0 Major Release: Added Class Timetable Cloud & QR Sharing, Mid-Semester Past Attendance Input, Interactive Holiday Manager, Weekly Bunk Strategy & Simulator, and Smart 10-minute delayed Reminders."
 }

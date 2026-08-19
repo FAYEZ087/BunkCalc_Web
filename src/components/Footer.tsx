@@ -19,13 +19,13 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-2 text-xs font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-900 px-3.5 py-2 rounded-xl w-fit border border-slate-200 dark:border-slate-800">
               <span>Built by</span>
               <a 
-                href="https://github.com/FAYEZ087" 
+                href="https://github.com/PinecoXZ" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-blue-600 dark:text-blue-400 font-bold hover:underline flex items-center gap-1"
               >
                 <GithubIcon size={14} />
-                FAYEZ087
+                PinecoXZ
               </a>
             </div>
           </div>
@@ -52,13 +52,13 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-semibold text-slate-500 dark:text-slate-400">
               <li>
                 <a 
-                  href="https://github.com/FAYEZ087" 
+                  href="https://github.com/PinecoXZ" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-bold"
                 >
                   <GithubIcon size={16} />
-                  <span>GitHub (@FAYEZ087)</span>
+                  <span>GitHub (@PinecoXZ)</span>
                 </a>
               </li>
               <li><Link to="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link></li>
@@ -69,7 +69,7 @@ export default function Footer() {
         
         <div className="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-xs text-slate-400 font-bold uppercase tracking-widest">
-            © 2026 BunkCalc. Designed & Developed by <a href="https://github.com/FAYEZ087" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">FAYEZ087</a>.
+            © 2026 BunkCalc. Designed & Developed by <a href="https://github.com/PinecoXZ" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">PinecoXZ</a>.
           </div>
         </div>
       </div>
