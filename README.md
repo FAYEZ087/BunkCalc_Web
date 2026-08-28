@@ -1,16 +1,16 @@
-<div align="center">
+﻿<div align="center">
 
 # 🌐 BunkCalc — Landing Page
 
 ### _The official product website for BunkCalc._
 
-[![Version](https://img.shields.io/badge/version-2.1.0-blue?style=for-the-badge)](https://github.com/PinecoXZ/BunkCalc_Web)
+[![Version](https://img.shields.io/badge/version-2.2.0-blue?style=for-the-badge)](https://github.com/PinecoXZ/BunkCalc_Web)
 [![React](https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
 [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vite](https://img.shields.io/badge/Vite-8-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
-A **modern, responsive, and secure** marketing website that lets students learn about BunkCalc v2.1.0 and download the Android APK directly.
+A **modern, responsive, and secure** marketing website that lets students learn about BunkCalc v2.2.0 and download the Android APK directly.
 
 ---
 
@@ -20,9 +20,9 @@ A **modern, responsive, and secure** marketing website that lets students learn 
 
 | Page | Route | Description |
 |---|---|---|
-| 🏠 **Home** | `/` | Hero section, v2.1.0 feature showcase, phone mockup, and download CTA |
+| 🏠 **Home** | `/` | Hero section, v2.2.0 feature showcase, phone mockup, and direct download CTA |
 | 🛟 **Support** | `/support` | Setup guide and frequently asked questions |
-| 🔏 **Privacy** | `/privacy` | Full privacy policy detailing the zero-collection architecture |
+| 🔏 **Privacy** | `/privacy` | Full privacy policy detailing the zero-collection and on-device biometric architecture |
 | 📜 **Terms** | `/terms` | Terms of service |
 
 ---
@@ -57,6 +57,7 @@ Build          Vite 8
 landing-page-pro/
 ├── public/                     # Static assets
 │   ├── bunkcalc.apk            # Downloadable Android APK
+│   ├── version.json            # v2.2.0 OTA update definition
 │   ├── favicon.png             # 32×32 favicon (BunkCalc logo)
 │   ├── icon-192.png            # PWA icon
 │   ├── icon-512.png            # Large icon
@@ -66,10 +67,10 @@ landing-page-pro/
 │   │   ├── Navbar.tsx             # Fixed glassmorphism navigation bar
 │   │   └── Footer.tsx             # 4-column footer with links
 │   ├── pages/                  # Route-level page components
-│   │   ├── Home.tsx               # Hero + v2.0.0 features grid + banner CTA
+│   │   ├── Home.tsx               # Hero + v2.2.0 features grid + banner CTA
 │   │   ├── Support.tsx            # Setup guide + FAQ
-│   │   ├── Privacy.tsx            # Privacy policy (v2.0.0)
-│   │   └── Terms.tsx              # Terms of service (v2.0.0)
+│   │   ├── Privacy.tsx            # Privacy policy (v2.2.0)
+│   │   └── Terms.tsx              # Terms of service (v2.2.0)
 │   ├── assets/                 # Bundled assets
 │   │   └── hero.png               # Hero section image
 │   ├── App.tsx                 # Root layout + router
@@ -158,7 +159,7 @@ This landing page is the **public-facing website** for the [BunkCalc mobile app]
 | **Purpose** | Marketing + APK download | The actual attendance tracker |
 | **Platform** | Web (any browser) | Android (Capacitor) |
 | **Data** | None — fully static | Local-only (Preferences API) |
-| **Version** | `2.1.0` | `2.1.0` |
+| **Version** | `2.2.0` | `2.2.0` |
 
 ---
 
@@ -172,6 +173,6 @@ This project is **private** and not open-source. All rights reserved.
 
 **The front door to BunkCalc — designed to impress, built to convert.**
 
-`v2.1.0` · Developed by [PinecoXZ](https://github.com/PinecoXZ)
+`v2.2.0` · Developed by [PinecoXZ](https://github.com/PinecoXZ)
 
 </div>

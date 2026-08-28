@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
 import { 
   Download, 
-  ShieldCheck, 
-  BellRing, 
-  CloudLightning, 
+  Fingerprint, 
   CheckCircle2,
   ChevronRight,
   BarChart3,
@@ -12,10 +10,13 @@ import {
   RotateCcw,
   FileSpreadsheet,
   Search,
-  Sparkle
+  Sparkle,
+  Layers,
+  Zap,
+  type LucideIcon
 } from 'lucide-react';
 
-const FeatureCard = ({ icon: Icon, title, description, delay }: { icon: any, title: string, description: string, delay: number }) => (
+const FeatureCard = ({ icon: Icon, title, description, delay }: { icon: LucideIcon, title: string, description: string, delay: number }) => (
   <motion.div 
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -45,18 +46,18 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 md:border border-blue-100 dark:border-blue-800">
               <Sparkle size={14} />
-              <span>Version 2.1.0 Major Release</span>
+              <span>Version 2.2.0 Major Release</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 md:mb-8 leading-tight tracking-tight text-slate-900 dark:text-white">
               Take Control of Your <span className="text-blue-600">College Life.</span>
             </h1>
             <p className="text-base md:text-xl text-slate-600 dark:text-slate-400 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              The ultimate attendance tracker built for students. Class timetable QR sharing, mid-semester past attendance sync, weekly bunk strategy, and a modern UI that respects your time.
+              The ultimate attendance tracker built for students. Biometric fingerprint security, 1-tap quick marking, 10 modular settings hubs, timetable QR sharing, and a 100% pure vector UI that respects your privacy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="/bunkcalc.apk" className="bg-blue-600 hover:bg-blue-700 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl flex items-center justify-center gap-3 font-bold text-base md:text-lg transition-all shadow-xl shadow-blue-500/25 active:scale-95 group">
                 <Download size={24} />
-                <span>Download APK v2.1.0</span>
+                <span>Download APK v2.2.0</span>
                 <ChevronRight className="hidden sm:block group-hover:translate-x-1 transition-transform" />
               </a>
               <div className="flex items-center justify-center gap-3 px-2 text-xs md:text-sm font-semibold text-slate-500 dark:text-slate-400">
@@ -82,23 +83,34 @@ export default function Home() {
                 <div className="p-6 md:p-8 pt-10 md:pt-12">
                   <div className="flex justify-between items-center mb-6 md:mb-8">
                     <span className="text-lg md:text-xl font-black italic text-blue-600 uppercase">BunkCalc</span>
-                    <span className="text-[10px] font-black bg-blue-500/20 text-blue-500 px-2 py-0.5 rounded-full">v2.1.0</span>
+                    <span className="text-[10px] font-black bg-blue-500/20 text-blue-500 px-2 py-0.5 rounded-full">v2.2.0</span>
                   </div>
                   
-                  <div className="bg-blue-600 rounded-2xl md:rounded-3xl p-4 md:p-6 mb-6 md:mb-8 text-white">
+                  <div className="bg-blue-600 rounded-2xl md:rounded-3xl p-4 md:p-6 mb-6 md:mb-8 text-white shadow-lg shadow-blue-600/30">
                     <p className="text-[8px] md:text-[10px] font-bold opacity-80 uppercase tracking-widest mb-1">Upcoming Next</p>
                     <h3 className="text-base md:text-xl font-bold mb-1">Software Engg</h3>
-                    <div className="bg-white/20 px-2 py-0.5 md:py-1 rounded text-[8px] md:text-[10px] font-bold inline-block">09:00 AM</div>
+                    <div className="bg-white/20 px-2 py-0.5 md:py-1 rounded text-[8px] md:text-[10px] font-bold inline-block">09:00 AM • Room 302</div>
                   </div>
 
                   <div className="space-y-3 md:space-y-4">
-                    {[1, 2, 3].map(i => (
-                      <div key={i} className="flex items-center gap-3 md:gap-4 bg-slate-50 dark:bg-slate-900/50 p-3 md:p-4 rounded-xl md:rounded-2xl border border-slate-100 dark:border-slate-800">
-                        <div className="w-8 h-8 md:w-10 md:h-10 bg-blue-100 dark:bg-blue-900/40 rounded-lg md:rounded-xl flex-shrink-0" />
-                        <div className="flex-1 space-y-1">
-                          <div className="h-2.5 md:h-3 bg-slate-200 dark:bg-slate-700 rounded w-3/4" />
-                          <div className="h-1.5 md:h-2 bg-slate-100 dark:bg-slate-800 rounded w-1/2" />
+                    {[
+                      { name: 'Computer Networks', pct: '88.5%', status: 'Safe' },
+                      { name: 'Database Systems', pct: '74.2%', status: 'At Risk' },
+                      { name: 'Algorithm Lab', pct: '92.0%', status: 'Safe' }
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center justify-between bg-slate-50 dark:bg-slate-900/50 p-3 md:p-4 rounded-xl md:rounded-2xl border border-slate-100 dark:border-slate-800">
+                        <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 md:w-10 md:h-10 bg-blue-100 dark:bg-blue-900/40 rounded-lg md:rounded-xl flex items-center justify-center font-bold text-xs text-blue-600">
+                            {item.name[0]}
+                          </div>
+                          <div>
+                            <p className="text-xs font-bold dark:text-white">{item.name}</p>
+                            <p className="text-[10px] text-slate-400">{item.pct} Attendance</p>
+                          </div>
                         </div>
+                        <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${item.status === 'Safe' ? 'bg-emerald-500/10 text-emerald-600' : 'bg-red-500/10 text-red-600'}`}>
+                          {item.status}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -113,65 +125,65 @@ export default function Home() {
       <section id="features" className="py-16 md:py-24 px-4 md:px-6 bg-slate-50 dark:bg-slate-900/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-20">
-            <h2 className="text-3xl md:text-4xl font-black mb-4 dark:text-white">What's New in Version 2.1.0</h2>
+            <h2 className="text-3xl md:text-4xl font-black mb-4 dark:text-white">What's New in Version 2.2.0</h2>
             <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              BunkCalc v2.1.0 introduces Class Timetable Cloud & QR Sharing, Mid-Semester Past Attendance Sync, Interactive Holiday Manager, and 7-Day Strategy Engine.
+              BunkCalc v2.2.0 brings Native Biometric Security, 1-Tap Attendance & Batch Marking, 10 Modular Settings Hubs, Instant Subject Filtering, and 100% Vector Icons.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <FeatureCard 
-              icon={Sparkles}
-              title="Timetable Cloud & QR Sharing"
-              description="Share complete section schedules in 1 second with 6-letter short codes or camera-scannable QR codes."
+              icon={Fingerprint}
+              title="Biometric Fingerprint Unlock"
+              description="Secure your attendance data with native Android BiometricPrompt (Fingerprint / Face ID) and 4-digit PIN fallback."
               delay={0.1}
             />
             <FeatureCard 
-              icon={Clock}
-              title="Mid-Semester Past Attendance"
-              description="Joined mid-semester? Enter attended and missed classes on import or edit anytime in Subject Details."
+              icon={Zap}
+              title="1-Tap Attendance & Batch Marking"
+              description="Mark classes in 1 tap directly from the dashboard or use 'Mark All Present' with real-time daily progress tracking."
               delay={0.2}
             />
             <FeatureCard 
-              icon={RotateCcw}
-              title="Interactive Holiday Manager"
-              description="Create and manage semester breaks directly with automated reminder rescheduling and timetable sync."
+              icon={Layers}
+              title="10 Modular Settings Hubs"
+              description="Clean, modular sub-page architecture with live contextual badges, search bar, and custom tactile PIN keypad modal."
               delay={0.3}
+            />
+            <FeatureCard 
+              icon={Search}
+              title="Subject Filter Chips & 4-Way Sort"
+              description="Instant search by room or faculty, quick filter chips (In Danger, Safe, Labs), and multi-criteria sorting."
+              delay={0.4}
+            />
+            <FeatureCard 
+              icon={Sparkles}
+              title="Timetable Cloud & QR Sharing"
+              description="Share complete section schedules in 1 second with 6-letter short codes or camera-scannable QR codes."
+              delay={0.5}
             />
             <FeatureCard 
               icon={BarChart3}
               title="Weekly Bunk Strategy"
               description="Smart 7-day tactical roadmap showing safe skips and exact consecutive classes needed for recovery."
-              delay={0.4}
+              delay={0.6}
             />
             <FeatureCard 
-              icon={BellRing}
-              title="Smart Class Reminders"
-              description="Post-class notifications sent 10 minutes after lecture end with duplicate suppression."
-              delay={0.5}
+              icon={Clock}
+              title="Mid-Semester Past Attendance"
+              description="Joined mid-semester? Enter attended and missed classes on import or edit anytime in Subject Details."
+              delay={0.7}
+            />
+            <FeatureCard 
+              icon={RotateCcw}
+              title="Interactive Holiday Manager"
+              description="Create and manage semester breaks directly with automated reminder rescheduling and timetable sync."
+              delay={0.8}
             />
             <FeatureCard 
               icon={FileSpreadsheet}
               title="CSV & PDF Exports"
-              description="Download complete attendance logs as spreadsheets or export printable PDF reports."
-              delay={0.6}
-            />
-            <FeatureCard 
-              icon={Search}
-              title="History Search & Filters"
-              description="Filter logs by subject, status (Present/Absent/Cancelled), or custom date ranges."
-              delay={0.7}
-            />
-            <FeatureCard 
-              icon={ShieldCheck}
-              title="Safety Confirmations"
-              description="Built-in safeguards prevent accidental deletion of attendance records or subject profiles."
-              delay={0.8}
-            />
-            <FeatureCard 
-              icon={CloudLightning}
-              title="Fast, Offline & Zero Data"
-              description="Your data is stored 100% locally on your device. No servers, no accounts, zero tracking."
+              description="Download complete attendance logs as spreadsheets or export printable PDF reports locally."
               delay={0.9}
             />
           </div>
@@ -185,25 +197,25 @@ export default function Home() {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Designed for Excellence.</h2>
             <p className="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
-              BunkCalc (v2.1.0) is the latest release packed with timetable QR sharing, mid-semester past attendance, weekly strategy, and holiday management.
+              BunkCalc v2.2.0 is the complete attendance tracking companion — secure, fast, private, and fully offline.
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
               <div className="flex items-center gap-2">
                 <CheckCircle2 size={18} className="text-white flex-shrink-0" />
-                <span className="font-bold text-sm md:text-base">Android 14+ Ready</span>
+                <span className="font-bold text-sm md:text-base">Biometric Security</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 size={18} className="text-white flex-shrink-0" />
-                <span className="font-bold text-sm md:text-base">Optimized for Students</span>
+                <span className="font-bold text-sm md:text-base">Zero Data Collection</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 size={18} className="text-white flex-shrink-0" />
-                <span className="font-bold text-sm md:text-base">Zero Data Usage</span>
+                <span className="font-bold text-sm md:text-base">100% Offline Ready</span>
               </div>
             </div>
             <a href="/bunkcalc.apk" className="inline-flex items-center gap-3 bg-white text-blue-600 px-8 md:px-10 py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl hover:bg-slate-50 transition-all active:scale-95 shadow-xl w-full sm:w-auto justify-center">
               <Download size={24} />
-              <span>Get the APK v2.1.0</span>
+              <span>Get the APK v2.2.0</span>
             </a>
           </div>
         </div>

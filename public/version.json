@@ -1,6 +1,6 @@
 {
-  "versionCode": 6,
-  "versionName": "2.1.0",
+  "versionCode": 7,
+  "versionName": "2.2.0",
   "apkUrl": "https://bunk-calc-web.vercel.app/bunkcalc.apk",
-  "changelog": "v2.1.0 Major Release: Added Class Timetable Cloud & QR Sharing, Mid-Semester Past Attendance Input, Interactive Holiday Manager, Weekly Bunk Strategy & Simulator, and Smart 10-minute delayed Reminders."
+  "changelog": "v2.2.0 Major Update: Biometric Fingerprint / Face Unlock, 10 Modular Settings Hubs with Instant Search, 1-Tap Attendance & Batch Mark All Present, Subject Search & Filter Chips, 100% Pure Vector UI, and Comprehensive Performance & Bug Fixes."
 }

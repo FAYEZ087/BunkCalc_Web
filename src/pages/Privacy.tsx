@@ -1,9 +1,9 @@
-export default function Privacy() {
+﻿export default function Privacy() {
   return (
     <div className="pt-32 pb-24 px-6 min-h-screen">
       <div className="max-w-4xl mx-auto prose dark:prose-invert">
         <h1 className="text-5xl font-black mb-8 dark:text-white uppercase italic">Privacy Policy</h1>
-        <p className="text-slate-500 font-bold mb-12">Effective Date: August 19, 2026 &bull; Version 2.1.0</p>
+        <p className="text-slate-500 font-bold mb-12">Effective Date: August 29, 2026 &bull; Version 2.2.0</p>
 
         <section className="mb-12">
           <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">1. Introduction</h2>
@@ -29,6 +29,7 @@ export default function Privacy() {
             <li>Personal Identifiable Information (PII) such as your name, email address, phone number, or student ID</li>
             <li>Location data, GPS coordinates, or IP addresses</li>
             <li>Device identifiers (IMEI, Advertising ID, hardware serial numbers)</li>
+            <li>Biometric templates, fingerprint scans, or facial recognition geometry</li>
             <li>Usage analytics, behavioural data, or session recordings</li>
             <li>Crash logs or diagnostic telemetry</li>
             <li>Contacts, photos, camera, microphone, or any media</li>
@@ -36,11 +37,15 @@ export default function Privacy() {
         </section>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">4. Device Permissions</h2>
+          <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">4. Device Permissions & Biometrics</h2>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
             BunkCalc requests the following device permissions solely for the features described below. Each permission is opt-in and can be revoked at any time through your device's system settings.
           </p>
           <div className="grid gap-6">
+            <div className="p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-100 dark:border-slate-800">
+              <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-widest text-sm mb-2">Biometric Authentication</h4>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Used for optional biometric app lock. Verification is executed entirely through the Android OS BiometricPrompt API within the device's secure hardware enclave (TEE/Secure Element). BunkCalc NEVER accesses, stores, reads, or transmits biometric templates, raw fingerprints, or facial data.</p>
+            </div>
             <div className="p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-100 dark:border-slate-800">
               <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-widest text-sm mb-2">Notifications</h4>
               <p className="text-sm text-slate-600 dark:text-slate-400">Used to deliver scheduled class reminders before lectures, post-class attendance marking prompts, and threshold alerts. Notifications are scheduled locally on-device and never routed through external services.</p>
@@ -51,7 +56,7 @@ export default function Privacy() {
             </div>
             <div className="p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-100 dark:border-slate-800">
               <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-widest text-sm mb-2">File Storage</h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400">Accessed only when you manually export a backup file or generate a shareable attendance card image.</p>
+              <p className="text-sm text-slate-600 dark:text-slate-400">Accessed only when you manually export a backup file, generate a calendar file (.ics), or generate a shareable attendance card image.</p>
             </div>
           </div>
         </section>
@@ -59,14 +64,14 @@ export default function Privacy() {
         <section className="mb-12">
           <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">5. Data Retention & Deletion</h2>
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-            Your data persists on your device until you manually reset the app, clear its data through system settings, or uninstall the application. Since all data is local, deletion is immediate and permanent. We cannot recover your data after deletion.
+            Your data persists on your device until you reset the app via Settings, clear the application data in Android settings, or uninstall BunkCalc. Since no data is transmitted to our servers, deletion from your device is instant, complete, and permanent.
           </p>
         </section>
 
-        <section className="mb-12 p-8 bg-blue-50 dark:bg-blue-900/20 rounded-3xl border border-blue-100 dark:border-blue-800 text-center">
-          <h2 className="text-xl font-black mb-2 dark:text-white">Transparency Matters</h2>
-          <p className="text-slate-600 dark:text-slate-400">
-            Questions? Reach out to <a href="mailto:privacy@bunkcalc.app" className="text-blue-600 font-bold">privacy@bunkcalc.app</a>
+        <section className="mb-12">
+          <h2 className="text-2xl font-black mb-4 dark:text-white uppercase tracking-tight">6. Security & Encryption</h2>
+          <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+            BunkCalc follows security best practices: Content Security Policy (CSP), strict input sanitization to eliminate HTML injection/XSS, schema validation on import, and zero external tracking SDKs.
           </p>
         </section>
       </div>
